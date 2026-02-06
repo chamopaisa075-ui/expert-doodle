@@ -1,4 +1,4 @@
-# Astro Starter Kit: Basics
+# proyecto 1 instituto alfa 
 
 ```sh
 npm create astro@latest -- --template basics
