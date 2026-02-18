@@ -1,63 +1,26 @@
 ---
-import { Icon } from 'astro-icon/components'
+import '../styles/global.css'
+import { Icon } from "astro-icon/components";
+import Menu from "../components/Menu.astro";
 ---
 
-
-        <!doctype html>
-         <html lang="en">
-		  <head>
+<!doctype html>
+<html lang="en">
+	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>VariedadesKim</title>
-	      </head>
-	      <body>
-	      <nav>
-			<div>
+	</head>
+	<body>
 
-            <p>
-		    <p> VariedadesKim.</p>
+		
+		<Menu></Menu>
 
-		 </div>	
-		 <nav>
-			<a href="/">inicio</a>
-			<a href="/shampoopremium">shampoo premium</a>
-			<a href="/antigrasa">antigrasa</a>
-			<a href="/Contactanos">productos</a>
-         <div>
-		    <button>
-			</button>    	
-	
-	     <section>
-			 <p>
-			 <h1>
-
-			 </p>
-              <div>
-			 <button>
-
-			    <icon name="carrito"></icon>
-				<icon name="busqueda"></icon>
-				<icon name="menu"></icon>
-
-			 </button> 
+		<slot></slot>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+	</body>
+</html>
