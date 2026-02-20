@@ -1,15 +1,41 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import TarjetaProductos from '../components/TarjetaProductos.astro';  
-
+import Layout from "../layouts/Layout.astro";
+import TarjetaProductos from "../components/TarjetaProductos.astro";
 ---
 
-
 <Layout>
-
   <h1>Antigrasa</h1>
-  <p>El antigrasa .</p>
-  <TarjetaProductos /><TarjetaProductos />
-  
+  <p>El antigrasa</p>
+  <div>
+    <TarjetaProductos /><TarjetaProductos />
+  </div>
+
+<div class="pedropablo">
+  <img src="/olé antigrasa.jpeg" alt="" />
+</div>
+
+
+
+
+
+
+
+
+
+
 </Layout>
 
+
+<style>
+
+  .pedropablo {
+    display: flex;
+    justify-content: center;
+  }
+
+
+  img {
+    width: 25%;
+    height: auto;
+  }
+</style>
