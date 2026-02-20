@@ -1,10 +1,17 @@
+---
+const titulo = Astro.props.titulo
+const parrafo = Astro.props.parrafo
+
+
+
+---
 <section>
   <img src="shampoo" alt="" />
   <div>
     <div>
       <p>Shampoo Antigrasa</p>
-      <h3>Shampoo Antigrasa</h3>
-      <p>reparacion profunda</p>
+      <h3>{titulo}</h3>
+      <p>{parrafo}</p>
     </div>
     <div>
       <p>precio: $15.000</p>
