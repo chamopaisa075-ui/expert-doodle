@@ -15,7 +15,7 @@ import ComProductos from "../components/ComProductos.astro";
         decimos "hola" a productos naturales que no solo hacen que tu cabello se
         vea genial, sino que también ayudan a mantenerlo fuerte y saludable..
     </p>
-    <div>
+    <div class="luis">
         <ComProductos />
         <ComProductos />
     </div>
@@ -38,5 +38,11 @@ import ComProductos from "../components/ComProductos.astro";
     a {
         text-decoration: none;
         color: blueviolet;
+    }
+
+    .luis {
+        display: flex;
+        flex-wrap: wrap;
+        
     }
 </style>
