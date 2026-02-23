@@ -1,12 +1,42 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import ComProductos from "../components/ComProductos.astro";
 ---
 
- <Layout>   
+<Layout>
+    <h1 class="jesus">
+        Creemos en el valor de los ingredientes y fórmulas naturales
+    </h1>
+    <p class="austin">
+        Nada de cosas extrañas o complicadas. Usamos ingredientes naturales
+        llenos de amor, como aceites, extractos de plantas y vitaminas, que
+        cuidan tus hebras y les dan vida. Les decimos "bye bye" a esos
+        ingredientes dañinos y artificiales que has usado por años. Nosotros
+        decimos "hola" a productos naturales que no solo hacen que tu cabello se
+        vea genial, sino que también ayudan a mantenerlo fuerte y saludable..
+    </p>
+    <div>
+        <ComProductos />
+        <ComProductos />
+    </div>
+</Layout>
 
-<h1>Productos</h1>
-<p>Descubre nuestra variedad de productos de cuidado capilar premium.</p>
+<style>
+    .jesus {
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 50px;
+    }
 
- </Layout>
-
-
+    .austin {
+        text-align: center;
+        padding: 30px 15px;
+        font-size: 30px;
+        max-width: 650px;
+        margin: auto;
+    }
+    a {
+        text-decoration: none;
+        color: blueviolet;
+    }
+</style>
