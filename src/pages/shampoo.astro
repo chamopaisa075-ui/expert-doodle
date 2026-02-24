@@ -5,27 +5,32 @@ import TarjetaProductos from "../components/TarjetaProductos.astro";
 
 <Layout>
   <h1>Shampoo</h1>
-  <p>El shampoo</p>
-  <div>
-    <TarjetaProductos titulo="pulpa de coco" />
-    <TarjetaProductos titulo="acondicionador" />
-    <TarjetaProductos titulo="proteccion termica" />
-    <TarjetaProductos tutilo="aceite de coco" />
-  </div>
+  <p>Tu favorito siempre</p>
+  <p>
+    La historia de tu cabello comienza desde su raíz. El shampoo es el encargado
+    de limpiarla, cuidarla y nutrirla. Úsalo diariamente sin miedo y disfruta de
+    su textura.
+    <div >
+      <TarjetaProductos titulo="Shampoo antigrasa"/>
+      <TarjetaProductos titulo="Shampoo mixto" />
+      <TarjetaProductos titulo="Shampoo hidratante" />
+      <TarjetaProductos tutilo="Shampoo crecimiento" />
+    </div>
 
-  <div class="pedropablo">
-    <img src="/olé antigrasa.jpeg" alt="" />
-  </div>
+    <div class="pedropablo">
+      <img src="/olé antigrasa.jpeg" alt="" />
+    </div>
+  </p>
+
+  <style>
+    .pedropablo {
+      display: flex;
+      justify-content: center;
+    }
+
+    img {
+      width: 25%;
+      height: auto;
+    }
+  </style>
 </Layout>
-
-<style>
-  .pedropablo {
-    display: flex;
-    justify-content: center;
-  }
-
-  img {
-    width: 25%;
-    height: auto;
-  }
-</style>

@@ -5,7 +5,7 @@ import ComProductos from "../components/ComProductos.astro";
 
 <Layout>
     <h1 class="jesus">
-        Creemos en el valor de los ingredientes y fórmulas naturales
+        CREEMOS EN EL VALOR DE LOS INGREDIENTES Y FORMULAS NATURALES
     </h1>
     <p class="austin">
         Nada de cosas extrañas o complicadas. Usamos ingredientes naturales
@@ -16,8 +16,13 @@ import ComProductos from "../components/ComProductos.astro";
         vea genial, sino que también ayudan a mantenerlo fuerte y saludable..
     </p>
     <div class="luis">
-        <ComProductos />
-        <ComProductos />
+        <ComProductos componente="Pre-Shampoo Proteina de arroz" />
+        <ComProductos componente="Pre-Shampoo Pulpa de coco" />
+        <ComProductos componente="Acondicionador Algodón y coco" />
+        <ComProductos componente="Acondicionador Long lasting" />
+        <ComProductos componente="Termoprotector y Desenredante" />
+        <ComProductos componente="Hairstick anti-frizz" />
+        <ComProductos componente="Spray anti-humedad" />
     </div>
 </Layout>
 
@@ -26,6 +31,8 @@ import ComProductos from "../components/ComProductos.astro";
         text-align: center;
         padding: 20px 10px;
         font-size: 50px;
+        text-decoration: none;
+        color: rgb(119, 63, 171);
     }
 
     .austin {
@@ -34,15 +41,21 @@ import ComProductos from "../components/ComProductos.astro";
         font-size: 30px;
         max-width: 650px;
         margin: auto;
+        text-decoration: none;
+        color: rgb(86, 0, 166);
     }
     a {
         text-decoration: none;
-        color: blueviolet;
+        color: rgb(42, 4, 78);
     }
 
     .luis {
         display: flex;
         flex-wrap: wrap;
-        
+        justify-content: space-evenly;
+        text-align: left;
+        text-decoration: none;
+        color: rgb(69, 0, 133);
+
     }
 </style>
