@@ -1,13 +1,43 @@
 ---
+import PerfumesCap from "../components/PerfumesCap.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-    <h1>Perfumes capilares</h1>
-    <p>Finalizadores, justo lo que necesitas para verte (y sentirte) wow!</p>
-    <p>
-        Los finalizadores son ese último paso que lo cambia todo. Ayudan a
-        definir, controlar y darle el toque final a tu look, sin esfuerzo y sin
-        peso. Úsalos a tu manera y deja que tu cabello haga lo suyo.
+    <h1 class="day">Perfumes capilares</h1>
+    <p class="gloriannys">
+        Finalizadores, justo lo que necesitas para verte (y sentirte) wow!
     </p>
-</Layout>
+    <p class="sara">
+        <p></p>
+        Los finalizadores son ese último paso que lo cambia todo. Ayudan a definir,
+        controlar y darle el toque final a tu look, sin esfuerzo y sin peso. Úsalos
+        a tu manera y deja que tu cabello haga lo suyo.
+
+        <div>
+            <PerfumesCap componente="Perfumes capilares">
+                <PerfumesCap componente="Perfumes capilares">
+                    <PerfumesCap componente="Perfumes capilares">
+                        <PerfumesCap componente="Perfumes capilares" />
+
+                        <style>
+                            .day {
+                                text-align: center;
+                                font-size: 40px;
+                                padding: 40px 20px;
+                                background-color: rgb(155, 90, 215);
+                            }
+                            .gloriannys {
+                                text-align: left;
+                                font-size: 20px;
+                            }
+                            .sara {
+                                text-align: left;
+                                font-size: 20px;
+                            }
+                        </style>
+                    </PerfumesCap>
+                </PerfumesCap></PerfumesCap>
+        </div>
+    </p></Layout
+>

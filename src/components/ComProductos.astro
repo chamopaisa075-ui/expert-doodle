@@ -3,11 +3,14 @@ const componente = Astro.props.componente;
 ---
 
 <section>
-    <img src="" alt="" />
+    <div class="madrid">
+        <img src="pulpa de coco.jpeg" alt="" />
+    </div>
+
     <div>
         <div>
-            <p>Tratamientos</p>
-            <h3>Pre-Shampoo</h3>
+            <p></p>
+            <h3>{componente}</h3>
             <p>
                 Úsalo antes de comenzar el proceso de limpieza con el cabello
                 húmedo o seco según sea tu necesidad, aplícalo de medios a
@@ -20,3 +23,9 @@ const componente = Astro.props.componente;
     </div>
 </section>
 
+<style>
+    .madrid {
+        margin: 200px -300px -300px 500px;
+        width: 600px;
+    }
+</style>

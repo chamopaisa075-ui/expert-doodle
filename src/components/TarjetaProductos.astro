@@ -1,23 +1,39 @@
 ---
-const titulo = Astro.props.titulo
-const parrafo = Astro.props.parrafo
-
-
-
+const titulo = Astro.props.titulo;
+const parrafo = Astro.props.parrafo;
 ---
+
 <section>
-  <img src="shampoo" alt="" />
+  <div class="cris">
+    <img src="shampoodecrecimiento.jpeg" alt="" />
+  </div>
+
   <div>
     <div>
-      <p>Shampoo Antigrasa</p>
       <h3>{titulo}</h3>
       <p>{parrafo}</p>
+      <p class="pedra">
+        La historia de tu cabello comienza desde su raíz. El shampoo es el
+        encargado de limpiarla, cuidarla y nutrirla. Úsalo diariamente sin miedo
+        y disfruta de su textura.
+      </p>
     </div>
     <div>
       <p>precio: $15.000</p>
     </div>
-    <div>
-      <button> comprar </button>
-    </div>
   </div>
+
+  <style>
+    .pedra {
+      max-width: 500px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 30px;
+    }
+
+    .cris {
+      max-width: 400px;
+      margin: 200px -300px -300px 500px;
+      width: 650px;
+    }
+  </style>
 </section>

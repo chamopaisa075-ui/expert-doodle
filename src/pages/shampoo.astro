@@ -4,33 +4,42 @@ import TarjetaProductos from "../components/TarjetaProductos.astro";
 ---
 
 <Layout>
-  <h1>Shampoo</h1>
-  <p>Tu favorito siempre</p>
-  <p>
+  <h1 class="petra">Shampoo</h1>
+  <p class="fred">Tu favorito siempre</p>
+  <p class="aleja">
     La historia de tu cabello comienza desde su raíz. El shampoo es el encargado
     de limpiarla, cuidarla y nutrirla. Úsalo diariamente sin miedo y disfruta de
     su textura.
-    <div >
+    <div class="juana">
       <TarjetaProductos titulo="Shampoo antigrasa"/>
       <TarjetaProductos titulo="Shampoo mixto" />
       <TarjetaProductos titulo="Shampoo hidratante" />
-      <TarjetaProductos tutilo="Shampoo crecimiento" />
-    </div>
-
-    <div class="pedropablo">
-      <img src="/olé antigrasa.jpeg" alt="" />
+      <TarjetaProductos titulo="Shampoo crecimiento" />
     </div>
   </p>
-
-  <style>
-    .pedropablo {
-      display: flex;
-      justify-content: center;
-    }
-
-    img {
-      width: 25%;
-      height: auto;
-    }
-  </style>
 </Layout>
+<style>
+
+  .petra {
+    text-align: center;
+    padding: 20px 10px;
+    background-color: rgb(155, 90, 215);
+    font-size: 50px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .fred {
+    text-align: left;
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .aleja {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  
+</style>
