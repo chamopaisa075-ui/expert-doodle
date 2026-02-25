@@ -1,10 +1,12 @@
 ---
 const componente = Astro.props.componente;
+const imagen= Astro.props.imagen
+
 ---
 
 <section>
     <div class="madrid">
-        <img src="pulpa de coco.jpeg" alt="" />
+        <img src={imagen} alt="" />
     </div>
 
     <div>
@@ -26,6 +28,12 @@ const componente = Astro.props.componente;
 <style>
     .madrid {
         margin: 200px -300px -300px 500px;
-        width: 600px;
+        width: 600px; 
+        max-width: 500px;
+
+    }
+    img{
+        width: 400px;
+        height: 400px;
     }
 </style>
