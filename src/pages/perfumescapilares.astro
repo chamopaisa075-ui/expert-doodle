@@ -1,6 +1,28 @@
 ---
 import PerfumesCap from "../components/PerfumesCap.astro";
+import TarjetaProductos from "../components/TarjetaProductos.astro";
 import Layout from "../layouts/Layout.astro";
+
+const listaDeproductos=[
+    {
+        titulo: 'Perfume capilar de chocolate',
+        descripcion: 'cholocalate',
+        precio:'15'
+    },{
+        titulo: 'Perfume capilar de galleta',
+        descripcion:'galleta',
+        precio:'15',
+    },{
+         titulo: 'perfume capilar de frutas',
+        descripcion:'frutas',
+        precio:'15',
+
+    },{
+         titulo: 'perfue capilar de coco',
+        descripcion:'coco',
+        precio:'15',
+    }
+]
 ---
 
 <Layout>
@@ -16,10 +38,24 @@ import Layout from "../layouts/Layout.astro";
         </p>
 
         <div>
-            <PerfumesCap componente="Perfumes capilares" />
-            <PerfumesCap componente="Perfumes capilares" />
-            <PerfumesCap componente="Perfumes capilares" />
-            <PerfumesCap componente="Perfumes capilares" />
+            {listaDeproductos.map(function(producto){
+
+                return <PerfumesCap
+                titulo={producto.titulo}
+                descripcion={producto.descripcion}
+                precio={producto.precio}
+                
+                >
+
+
+
+                </PerfumesCap>
+
+
+
+
+            }        
+        )}
         </div>
     </p>
 </Layout>
