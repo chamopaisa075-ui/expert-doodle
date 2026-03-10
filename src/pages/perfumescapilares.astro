@@ -3,26 +3,31 @@ import PerfumesCap from "../components/PerfumesCap.astro";
 import TarjetaProductos from "../components/TarjetaProductos.astro";
 import Layout from "../layouts/Layout.astro";
 
-const listaDeproductos=[
+const listaDeproductos = [
     {
-        titulo: 'Perfume capilar de chocolate',
-        descripcion: 'cholocalate',
-        precio:'15'
-    },{
-        titulo: 'Perfume capilar de galleta',
-        descripcion:'galleta',
-        precio:'15',
-    },{
-         titulo: 'perfume capilar de frutas',
-        descripcion:'frutas',
-        precio:'15',
-
-    },{
-         titulo: 'perfue capilar de coco',
-        descripcion:'coco',
-        precio:'15',
-    }
-]
+        titulo: "Perfume capilar galleta de chocolate",
+        descripcion:
+            "Un perfume capilar sin alcohol con una fragancia gourmand intensa y envolvente, inspirada en el aroma profundo y reconfortante de una galleta de chocolate recién horneada. Perfuma el cabello sin resecarlo, dejando una estela dulce, cálida y absolutamente irresistible",
+        precio: "15",
+    },
+    {
+        titulo: "Perfume capilar de galleta pistacho",
+        descripcion:
+            "Un perfume capilar sin alcohol con una fragancia gourmand irresistible, inspirada en el aroma cálido y delicioso de una galleta de pistacho recién horneada. Un toque dulce y envolvente que perfuma el cabello sin  resecarlo acompañándolo con una sensación reconfortante y adictiva durante el día.",
+        precio: "15",
+    },
+    {
+        titulo: "perfume capilar de galleta marsmallow",
+        descripcion:
+            "un perfume capilar sin alcohol con una fragancia de gourmand suave y envolvente, inspirada en el aroma dulce y esponjoso de una galleta de marshmallow. Perfuma el cabello delicadamente sin resecarlo, dejando una estela cálida, reconfortante y adictiva que acompaña a cada movimiento.",
+        precio: "15",
+    },
+    {
+        titulo: "perfue capilar de coco",
+        descripcion: "coco",
+        precio: "15",
+    },
+];
 ---
 
 <Layout>
@@ -31,33 +36,24 @@ const listaDeproductos=[
         Finalizadores, justo lo que necesitas para verte (y sentirte) wow!
     </p>
     <p class="sara">
-        <p>
-            Los finalizadores son ese último paso que lo cambia todo. Ayudan a
-            definir, controlar y darle el toque final a tu look, sin esfuerzo y
-            sin peso. Úsalos a tu manera y deja que tu cabello haga lo suyo.
-        </p>
-
-        <div>
-            {listaDeproductos.map(function(producto){
-
-                return <PerfumesCap
-                titulo={producto.titulo}
-                descripcion={producto.descripcion}
-                precio={producto.precio}
-                
-                >
-
-
-
-                </PerfumesCap>
-
-
-
-
-            }        
-        )}
-        </div>
+        Los finalizadores son ese último paso que lo cambia todo. Ayudan a
+        definir, controlar y darle el toque final a tu look, sin esfuerzo y sin
+        peso. Úsalos a tu manera y deja que tu cabello haga lo suyo.
     </p>
+
+    <div>
+        {
+            listaDeproductos.map(function (producto) {
+                return (
+                    <PerfumesCap
+                        titulo={producto.titulo}
+                        descripcion={producto.descripcion}
+                        precio={producto.precio}
+                    />
+                );
+            })
+        }
+    </div>
 </Layout>
 
 <style>
@@ -68,11 +64,20 @@ const listaDeproductos=[
         background-color: rgb(155, 90, 215);
     }
     .gloriannys {
-        text-align: left;
-        font-size: 20px;
+        text-align: center;
+        padding: 40px 20px;
+        font-size: 400%;
+        color: rgb(0, 0, 0);
+        font-family: "Times New Roman", Times, serif;
     }
     .sara {
-        text-align: left;
-        font-size: 20px;
+        text-align: center;
+        padding: 30px 15px;
+        font-size: 30px;
+        max-width: 650px;
+        margin: auto;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: "Times New Roman", Times, serif;
     }
 </style>
