@@ -1,6 +1,5 @@
 ---
 import PerfumesCap from "../components/PerfumesCap.astro";
-import TarjetaProductos from "../components/TarjetaProductos.astro";
 import Layout from "../layouts/Layout.astro";
 
 const listaDeproductos = [
@@ -28,6 +27,8 @@ const listaDeproductos = [
         precio: "15",
     },
 ];
+const imagen= Astro.props.imagen
+
 ---
 
 <Layout>
@@ -70,14 +71,15 @@ const listaDeproductos = [
         color: rgb(0, 0, 0);
         font-family: "Times New Roman", Times, serif;
     }
-    .sara {
-        text-align: center;
-        padding: 30px 15px;
-        font-size: 30px;
-        max-width: 650px;
-        margin: auto;
+    .sara{
+         text-align:right;
+        
+        font-size: 40px;
+        max-width: 500px;
         text-decoration: none;
         color: rgb(0, 0, 0);
         font-family: "Times New Roman", Times, serif;
     }
+    
 </style>
+ 

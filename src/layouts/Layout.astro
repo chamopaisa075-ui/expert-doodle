@@ -2,6 +2,7 @@
 import '../styles/global.css'
 import { Icon } from "astro-icon/components";
 import Menu from "../components/Menu.astro";
+import Piedepagina from '../components/PiedePagina.astro';
 ---
 
 <!doctype html>
@@ -17,16 +18,16 @@ import Menu from "../components/Menu.astro";
 	<body>
 
 		
-		<Menu></Menu>
+		<Menu> </Menu>
 
 		<slot></slot>
-
+<Piedepagina></Piedepagina>
 
 	</body>
 </html>
 <style>
 	body{
-		background-color: rgb(255, 255, 255);
+		background-color: rgb(225, 216, 229);
 	}
 
 </style>

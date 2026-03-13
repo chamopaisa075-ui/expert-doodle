@@ -1,12 +1,13 @@
 ---
 const titulo = Astro.props.titulo;
 const parrafo = Astro.props.parrafo;
+const imagen= Astro.props.imagen
 
 ---
 
 <section>
   <div class="cris">
-    <img src="shampoodecrecimiento.jpeg"alt="" />
+    <img src={imagen} alt="">
   </div>
 
   <div>

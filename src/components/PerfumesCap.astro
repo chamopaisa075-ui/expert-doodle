@@ -4,7 +4,7 @@ const listadeproductos=Astro.props.componente;
 ---
 
 <section>
-    <img src="" alt="" />
+    <img class="and3r" src="perfume.jpeg" alt="" />
     <div>
         <div>
             
@@ -12,19 +12,35 @@ const listadeproductos=Astro.props.componente;
                 Perfume capilar sin alcohol fragancia flor de azúcar
             </h3>
 
-            <p>
+            <p class="liliana">
                 Perfume capilar sin alcohol creado para esos momentos donde el
                 foco está en ti Con una mezcla chispeante y alegro, este aroma
                 to envuelve como una burbuja efervescente que se queda contigo
                 todo el dia. Fresco, femenino y completamente inolvidable.
             </p>
+            <p>10$</p>
         </div>
     </div>
 </section>
 <style>
     .kimbe {
-        justify-content: center;
+        max-width: 500px;
+        font-size: 20px;
     }
+    .liliana{
+         text-align:right;
+        padding: 30px 15px;
+        font-size: 20px;
+        max-width: 500px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        font-family: "Times New Roman", Times, serif;
+    }
+    .and3r{
+       margin: 400px -300px -350px 700px;
+       width: 500px;
 
+    }
+    
     
 </style>
